@@ -1,6 +1,6 @@
 # Penrose Documentation
 
-<a target="_blank" rel="noopener noreferrer" href="assets/img/hollow-pentagon.svg"><img src="assets/img/hollow-pentagon.svg?sanitize=true" alt="assets/img/hollow-pentagon.svg" style="max-width:20%;"></a>
+![assets/img/penrose-logo.png](assets/img/penrose-logo.png)
 
 This is a documentation site for [penrose](http://penrose.ink). It's not decided
 yet where it will be served from, and for it's development is being served 
