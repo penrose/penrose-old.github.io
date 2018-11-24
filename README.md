@@ -1,6 +1,7 @@
 # Penrose
 
-![assets/img/hollow-pentagon.svg](assets/img/hollow-pentagon.svg)
+<a target="_blank" rel="noopener noreferrer" href="/vsoch/penrose.github.io/blob/master/assets/img/hollow-pentagon.svg"><img src="/vsoch/penrose.github.io/raw/master/assets/img/hollow-pentagon.svg?sanitize=true" alt="assets/img/hollow-pentagon.svg" style="max-width:20%;"></a>
+
 
 This is a documentation site for [penrose](http://penrose.ink). It's not decided
 yet where it will be served from, and for it's development is being served 
