@@ -1,7 +1,6 @@
-# Penrose
+# Penrose Documentation
 
-<a target="_blank" rel="noopener noreferrer" href="/vsoch/penrose.github.io/blob/master/assets/img/hollow-pentagon.svg"><img src="/vsoch/penrose.github.io/raw/master/assets/img/hollow-pentagon.svg?sanitize=true" alt="assets/img/hollow-pentagon.svg" style="max-width:20%;"></a>
-
+<a target="_blank" rel="noopener noreferrer" href="assets/img/hollow-pentagon.svg"><img src="assets/img/hollow-pentagon.svg?sanitize=true" alt="assets/img/hollow-pentagon.svg" style="max-width:20%;"></a>
 
 This is a documentation site for [penrose](http://penrose.ink). It's not decided
 yet where it will be served from, and for it's development is being served 
@@ -39,6 +38,7 @@ The first level of folders represents the categories in the sidebar, so you can
 look in the appropriately named folder to find your page of interest. 
 
 **Create a new Page**
+
 Create a new markdown file in the category folder of your choice under [_docs](_docs).
 Each page has a chunk of text at the top called front end matter, and this is where
 you can write the title and category name:
@@ -74,7 +74,6 @@ to any documentation page's front matter.
 ### Navigation
 
 * Change `site.show_full_navigation` to control all or only the current navigation group being open.
-
 
 #### Previous Art
 
