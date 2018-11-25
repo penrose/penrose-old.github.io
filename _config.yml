@@ -38,7 +38,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - LICENCE
+  - LICENSE
 
 collections:
   docs:
@@ -74,8 +74,8 @@ defaults:
       _comments:
         type: Marks the impact of this release
 
-# -----------
-# CloudCannon
+# ---------
+# ChangeLog
 
 types:
   - minor

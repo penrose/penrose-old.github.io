@@ -109,7 +109,7 @@ where the Style domain comes in.
 
 ### What different kinds of users are there?
 
- 1. **Developers** want to create new visualizations for specific kinds of math or equations.
+ 1. **Developers** want to create new visualizations for specific kinds of math or equations ([Domain Development]({{ site.baseurl }}/domain-development/setup/)) or contribute to the penrose code base directly ([Penrose Development]({{ site.baseurl }}//penrose-development/building-running/)).
  2. **Users** might just be interested in plugging their LaTex into a style to get a pretty rendering for teaching materials or manuscripts.
 
 
@@ -141,4 +141,10 @@ is that Penrose makes it easy to visualize abstract functions, and do it in a
 way that is humanly understandable. You are able to make beautiful diagrams without needing
 to have a background in web design, or even much programming. In the next sections, we 
 will go through more detail about the DSLs are also **optimized** and **extendable**
-to many places where you might want to use functions.
+to many places where you might want to use functions. To continue learning, we can start with basic 
+[terminology]({{site.baseurl}}/terminology/).
+
+If you are a developer and want to jump right in, can start with either
+[Penrose Development]({{ site.baseurl }}//penrose-development/setup/) or
+[Domain Development]({{ site.baseurl }}//domain-development/setup/) documentation. If you
+are a user, you can also jump right in to the [user documentation]({{ site.baseurl }}/user-docs/).
