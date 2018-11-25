@@ -135,3 +135,10 @@ Intersect X Y {
 The first two lines are considered `Substance` because we are defining objects.
 The next part, which you can read as "set A is a circle" and "For an intersect between
 some X and Y we must ensure that X is overlapping Y."
+
+We won't go into further detail here - the basic understanding you should have
+is that Penrose makes it easy to visualize abstract functions, and do it in a
+way that is humanly understandable. You are able to make beautiful diagrams without needing
+to have a background in web design, or even much programming. In the next sections, we 
+will go through more detail about the DSLs are also **optimized** and **extendable**
+to many places where you might want to use functions.
