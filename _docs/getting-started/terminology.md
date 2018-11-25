@@ -1,7 +1,7 @@
 ---
 title: Terminology
 category: Getting Started
-order: 1
+order: 2
 ---
 
 To speak the Penrose tongue, you have to know some of the most commonly used terms. Here is a list of them:

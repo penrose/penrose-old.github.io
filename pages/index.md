@@ -3,16 +3,19 @@ title: Welcome
 permalink: /
 ---
 
-Penrose is a platform that enables people to <b>create beautiful diagrams 
+Penrose is software that enables people to <b>create beautiful diagrams 
 just by typing mathematical notation in plain text.</b> The goal is to make it 
 easy for non-experts to create and explore high-quality diagrams, providing 
 deeper insight into challenging technical concepts. We aim to <b>democratize 
 the process of creating visual intuition</b>.
 
+> Where do I go from here?
+
+If you are new to penrose, we recommend you start with 
+the [getting started]({{ site.baseurl }}/getting-started/) pages.
 
 <b>News:</b> We've released a <a href="http://penrose.ink/PenroseIntro2018.pdf">short introduction</a> 
 to the latest design of Penrose.
-
 
 <b>Contribute:</b> Do you often make diagrams of ideas in math, science, or 
 computer science for learning, research, or teaching? We'd like to 
