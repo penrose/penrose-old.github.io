@@ -46,33 +46,60 @@ If you did this for a paper, after figuring out all of the above you'd be
 exhausted. The problem is that <b>our visualization software doesn't understand the math</b>.
 
 Let's show another example from the slides, this one with <a href="http://www.graphviz.org/" target="_blank">GraphViz</a>.
-Here is the code and resulting visualization:
+Here is the code:
+
+```
+graph G {
+ e
+     subgraph clusterA {
+         a -- b;
+     subgraph clusterC {
+         C -- D;
+     }
+ }
+     subgraph clusterB {
+         d -- f
+     }
+ d -- D
+ e -- clusterB
+ clusterC -- clusterB
+}
+```
+
+and resulting visualization:
 
 ![img/about-graphviz.png](img/about-graphviz.png)
+
+We again encounter complicated syntax that doesn't do well to describe, for both
+human and machine, the expressions. 
+
+> Why are there not more languages like Penrose?
 
 Despite the fact that we learn enormously from visualization, because it isn't an
 essential requirement in training or education, it comes as an afterthought. It's
 also very hard to do, so it tends to be the case that visualization technology
-lags behind methods to understand or produce knowledge. Penr
+lags behind methods to understand or produce knowledge.
 
 ## Penrose
 
-Now imagine that we had a language for these designs. We would want to be able to
-say "This is set A, and this is set B, and here is the Intersect between sets A and B."
+### What is Penrose?
+
+Now imagine that we had a language for these designs. Penrose is that language.
+We would want to be able to say "This is set A, and this is set B, and here is the Intersect between sets A and B."
 We would want this represented not only in the visual output, but also the 
-code that we type to produce it. Penrose is software that provides two design specific
-languages, or DSLs.
+code that we type to produce it. Penrose can help us do that. To do this, we define
+two "[Domain Specific Languages](https://en.wikipedia.org/wiki/Domain-specific_language)," or DSLs.
 
-### Substance
+#### Substance
 
-The substance of a car might be frame and wheels. We don't care that much about
-the color, seat material, or other aesthetics. Thus, you can think of a substance
-domain as the core elements of what you want to describe. For Penrose, this
+What does the word "Substance" make you think of? It refers to some set of core
+elements. The substance of a car might be frame and wheels. We don't care that much about
+the color, seat material, or other aesthetics. For Penrose, this
 means objects in math.
 
-> The Substance Domain Specific Language include high level declarations of mathematical objects.
+> The Substance Domain Specific Language includes high level declarations of mathematical objects.
 
-### Style
+#### Style
 
 But we *do* care about the color of the car, and whether it has cloth or leather seats! This is
 where the Style domain comes in.
@@ -80,25 +107,23 @@ where the Style domain comes in.
 > The Style Domain Specific Language includes the visual presentation of the objects.
 
 
-### An Example
+### What different kinds of users are there?
 
-**note: still working on this, maybe some parts wrong**
+ 1. **Developers** want to create new visualizations for specific kinds of math or equations.
+ 2. **Users** might just be interested in plugging their LaTex into a style to get a pretty rendering for teaching materials or manuscripts.
+
+
+## An Example
 
 To go back to the simple sentence _This is set A, and this is set B, and here is the Intersect between sets A and B._
-let's now look at how we might define this using Penrose Substance and Style languages. First let's
-define Sets A and B, and their Intersects.
+let's now look at how we might define this using Penrose Substance and Style languages. We won't
+go into the details of this example, but will give you enough to show how intuitive it is to
+use Penrose.  Take a look at this file and see if you can figure out what it's saying.
 
 ```
 Set A, B
 Intersect A B
 
-```
-
-Yep, Penrose understands what these things mean mathematically! And importantly,
-so do you, just by looking at the text above. Now let's add our style preferences.
-Here are some expected conditions for our objects:
-
-```
 Set A {
  shape = Circle{ }
 }
@@ -107,7 +132,6 @@ Intersect X Y {
 }
 ```
 
-The above says that A should be a circle, and when we define an intersect between
-two variables (such as A and B) we want to ensure the two are overlapping.
-
-**still writing / learning**
+The first two lines are considered `Substance` because we are defining objects.
+The next part, which you can read as "set A is a circle" and "For an intersect between
+some X and Y we must ensure that X is overlapping Y."
