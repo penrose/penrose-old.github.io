@@ -62,12 +62,55 @@ Oh right, I need to specify a domain template!
 
 ```bash
 $ docker run -it -p 8000:8000 -p 9160:9160 vanessa/penrose web --template linear-algebra
-Please specify a template to run! Choices are:
 
-linear-algebra
-real-analysis
+...
+   Style program warnings   
+Warning: Sub obj 'T1''s field 'sameHeight' is overridden, but was not declared an override
+Warning: Sub obj 'T1''s field 'nonIntersect' is overridden, but was not declared an override
+Warning: Sub obj 'T''s field 'sameHeight' is overridden, but was not declared an override
+Warning: Sub obj 'T''s field 'nonIntersect' is overridden, but was not declared an override
+Warning: Sub obj 'U''s field 'sameHeight' is overridden, but was not declared an override
+Warning: Sub obj 'U''s field 'nonIntersect' is overridden, but was not declared an override
+
+Visualizing Substance program:
+
+Starting Server...
 ```
 
-A bunch of text will be output to the console (I'm not sure yet what this is) but then 
-you can open your browser to [http://localhost:8000/client.html](http://localhost:8000/client.html). 
+This will spit out a *ton* of verbosity on your command line. Importantly, if you open
+your browser to [http://localhost:8000/client.html](http://localhost:8000/client.html)
+you will see the viewer. If you click "Autostep" things move around.
+
+![img/autostep.png](img/autostep.png)
+
+Right now, since the plugins are included with the base software, we don't have an 
+elegant way to specify custom *.sub files other than to provide paths to all three
+(either in the container, or a directory that is mounted.) For example:
+
+```bash
+# What *.sub files do I have under real-analysis?
+$ docker run -it --entrypoint ls vanessa/penrose /penrose/src/domains/linear-algebra
+determinants.sub    norm.sub		   twoVectors.sub
+linear-algebra.dsl  paperSpec.sub	   vectorsAddition-3.sub
+linear-algebra.sty  scale.sub		   vectorsAddition.sub
+linearMap.sub	    threeVectorSpaces.sub  vectorsAddition2.sub
+linearMap_add.sub   twoVectorSpaces-2.sub  vectorsNegation.sub
+norm-2.sub	    twoVectorSpaces.sub
+```
+
+Let's choose a triad to run:
+
+twoVectors.sub linear-algebra-domain/linear-algebra.sty linear-algebra-domain/linear-algebra.dsl
+
+```bash
+PENROSE_STY=/penrose/src/domains/linear-algebra/linear-algebra.sty
+PENROSE_SUB=/penrose/src/domains/linear-algebra/twoVectors.sub
+PENROSE_DSL=/penrose/src/domains/linear-algebra/linear-algebra.dsl
+
+docker run -it -p 8000:8000 -p 9160:9160 vanessa/penrose web --custom "${PENROSE_SUB}" "${PENROSE_STY}" "${PENROSE_DSL}"
+```
+
+Note that I'm no
+
+ 
 Note that @vsoch is currently still struggling to get websockets working. More to come.
