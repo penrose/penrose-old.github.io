@@ -1,6 +1,6 @@
 ---
 title: Installation
-category: Install
+category: Installation
 permalink: /install/index.html
 order: 1
 ---

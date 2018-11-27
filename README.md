@@ -37,6 +37,35 @@ with an underscore because it's a [Jekyll collection](https://jekyllrb.com/docs/
 The first level of folders represents the categories in the sidebar, so you can
 look in the appropriately named folder to find your page of interest. 
 
+**Edit the Sidebar**
+
+The sidebar includes pages (the top level folders) under `_docs`. Originally we just
+had any folder render here automatically, but since we want to control the ordering
+I added a data entry that is parsed to determine these links. Thus, to change or 
+add to the sidebar:
+
+ 1. Open up [_data/links.yml](_data/links.yml) and edit the "navigation" list.
+ 2. Make sure that the "Title" corresponds with the folder name for the category (e.g., the following):
+
+```yml
+navigation:
+- name: Installation
+  url: install/
+```
+
+The name "Installation" will be checked against the category name "Installation" that is defined
+for the pages under "_docs/install"
+
+```yml
+---
+title: Installation
+category: Install
+permalink: /install/index.html
+order: 1
+---
+```
+These things don't *have* to be the same but it's a bit easier when they are.
+
 **Create a new Page**
 
 Create a new markdown file in the category folder of your choice under [_docs](_docs).

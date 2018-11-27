@@ -1,3 +1,18 @@
 footer:
 - name: ChangeLog
   url: changelog
+navigation:
+- name: Installation
+  url: install/
+- name: Getting Started
+  url: getting-started/
+- name: User Documentation
+  url: user-docs/
+- name: Domain Development
+  url: domain-development/
+- name: Penrose Development
+  url: penrose-development/
+- name: Contributing
+  url: contributing/
+- name: Projects
+  url: projects/
