@@ -11,13 +11,14 @@ you look at the [install options]({{ site.baseurl }}/install/) for penrose. You
 can either build Penrose locally, or using a Docker container. Once you have
 a set up that you like, you can continue reading the following topics.
 
-## Deployment
+## Docker
 
- - [Docker Deployment]({{ site.baseurl }}/penrose-development/docker/): happens with continuous integration via Github. Once set up, when you issue a pull request to the penrose repository, it will build a container, and deploy on merge.
+ - [Deployment]({{ site.baseurl }}/penrose-development/docker/): happens with continuous integration via Github. Once set up, when you issue a pull request to the penrose repository, it will build a container, and deploy on merge.
+ - [Local]({{ site.baseurl }}/penrose-development/docker-local/): some quick start steps for building Docker containers locally.
 
 ## Local
 
- - [Building and Running]({{ site.baseurl }}/penrose-development/building-running/): are some quick start steps for building from source. Likely we can remove this section (or put properly with the install).
+ - [Building and Running]({{ site.baseurl }}/penrose-development/building-running/): are some quick start steps for building from source, locally.
  - [Debugging]({{ site.baseurl }}/penrose-development/debugging/): some helpful hints when things go wrong. Which never happens, of course :)
  - [Testing]({{ site.baseurl }}/penrose-development/testing/): good practices for writing and running tests.
  - [Parameters]({{ site.baseurl }}/penrose-development/parameters/): that might be useful for snap.
