@@ -26,6 +26,28 @@ You don't need to install any dependencies on your host to build the
 container, it will be done on a continuous integration server, and the
 container built and available to you to pull from Docker Hub.
 
+### Step 0. The Base Container
+
+The build should be a bit faster if we can bootstrap a base container, and specifically it 
+would be pushed to [this Docker Hub repository](https://hub.docker.com/r/vanessa/penrose-base/).
+@vsoch doesn't know how to best do this, so she opened an [issue here](https://github.com/commercialhaskell/stack/issues/4419).
+Since this build would only need to happen when there is some change in dependencies, it's not
+automated and instead it would be done locally from the repository as follows:
+
+```bash
+$ docker build -f docker/Dockerfile.base -t vanessa/penrose-base
+$ docker push vanessa/penrose-base
+```
+
+Then the main Dockerfile would have this at the top.
+
+```bash
+FROM vanessa/penrose-base
+```
+
+Again, this isn't setup because it's not clear how to do it!
+
+
 ### Step 1. Clone the Repository
 
 First, fork the [penrose](https://www.github.com/penrose/penrose)
