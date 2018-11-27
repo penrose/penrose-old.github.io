@@ -1,7 +1,7 @@
 ---
 title: Building and Running
 category: Penrose Development
-order: 1
+order: 3
 ---
 
 Quick start: (tested on recent Macs with the latest GHC)

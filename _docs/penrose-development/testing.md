@@ -1,7 +1,7 @@
 ---
 title: Testing
 category: Penrose Development
-order: 3
+order: 5
 ---
 
 ### Testing the system

@@ -1,7 +1,7 @@
 ---
 title: Parameters
 category: Penrose Development
-order: 5
+order: 6
 ---
 
 Possibly outdated, since we've switched to snap and added new parameters.

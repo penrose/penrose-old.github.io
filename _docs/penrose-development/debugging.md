@@ -1,7 +1,7 @@
 ---
 title: Debugging
 category: Penrose Development
-order: 2
+order: 4
 ---
 
 ### General tips

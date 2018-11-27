@@ -1,7 +1,7 @@
 ---
 title: Docstrings with Haddock
 category: Penrose Development
-order: 7
+order: 8
 ---
 
 ## Documenting Penrose using Haddock

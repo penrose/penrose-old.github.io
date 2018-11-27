@@ -19,8 +19,12 @@ social:
   links:
     - https://github.com/penrose
 
+# The current hosting location of the docs
 repo: vsoch/penrose.github.io
 reponame: penrose.github.io
+
+# The current Docker container
+docker: vanessa/penrose
 
 # -----
 # Build

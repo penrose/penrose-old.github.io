@@ -1,7 +1,7 @@
 ---
 title: React Rendering and Frontend
 category: Penrose Development
-order: 6
+order: 8
 ---
 
 To develop for the React Rendering Frontend (at the time of this writing, located in `src/react-renderer` in the `end-user` branch), get set up with Typescript and Node.

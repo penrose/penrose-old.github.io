@@ -1,7 +1,7 @@
 ---
 title: Performance and Profiling
 category: Penrose Development
-order: 6
+order: 7
 ---
 
 ## Building, profiling, and running
