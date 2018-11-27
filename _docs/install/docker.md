@@ -1,6 +1,6 @@
 ---
 title: Penrose via Docker
-category: Install
+category: Installation
 order: 2
 ---
 

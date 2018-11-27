@@ -1,6 +1,6 @@
 ---
 title: Local Installation
-category: Install
+category: Installation
 order: 3
 ---
 
