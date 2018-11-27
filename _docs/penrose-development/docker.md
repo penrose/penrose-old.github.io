@@ -33,7 +33,7 @@ Github repository to your account, and clone the fork:
 
 ```bash
 git clone https://www.github.com/<username>/penrose
-git clone git@github.com:<username>/repo2docker-r.git
+git clone git@github.com:<username>/penrose.git
 ```
 
 ### Step 2. Configuration
