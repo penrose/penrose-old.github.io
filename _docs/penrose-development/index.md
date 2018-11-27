@@ -13,8 +13,8 @@ a set up that you like, you can continue reading the following topics.
 
 ## Docker
 
- - [Docker Deployment]({{ site.baseurl }}/penrose-development/docker/): happens with continuous integration via Github. Once set up, when you issue a pull request to the penrose repository, it will build a container, and deploy on merge.
- - [Docker Local]({{ site.baseurl }}/penrose-development/docker-local/): are some quick start steps for building Docker containers locally.
+ - [Deployment]({{ site.baseurl }}/penrose-development/docker/): happens with continuous integration via Github. Once set up, when you issue a pull request to the penrose repository, it will build a container, and deploy on merge.
+ - [Local]({{ site.baseurl }}/penrose-development/docker-local/): are some quick start steps for building Docker containers locally.
 
 ## Local
 

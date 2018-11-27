@@ -1,5 +1,5 @@
 ---
-title: User Documentation
+title: "Getting Started: User"
 category: User Documentation
 permalink: /user-docs/index.html
 order: 1
