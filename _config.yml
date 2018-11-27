@@ -4,7 +4,7 @@
 title: Penrose
 url: "http://penrose.ink"
 baseurl: "/penrose.github.io"
-google_analytics_key:
+google_analytics_key: "UA-129954962-1"
 show_full_navigation: false
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
