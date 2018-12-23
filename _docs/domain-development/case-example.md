@@ -1,7 +1,7 @@
 ---
 title: "The Real Analysis Domain: A Case Example"
 category: Domain Development
-order: 4
+order: 5
 ---
 
 ## Notes on `parallel-reals.sty` and `parallel-reals2.sty`
